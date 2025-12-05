@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Camp'us – Plateforme Étudiante & Business</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <script src="script1.js" defer></script>
+  <style>
+    :root{--glass: rgba(255,255,255,0.6)}
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial}
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+
+ <!-- HEADER -->
+<header class="bg-white/80 backdrop-blur-sm border-b sticky top-0 z-50">
+  <nav class="mx-auto max-w-7xl flex items-center justify-between px-4 sm:px-6 lg:px-8 py-4">
+    
+    <!-- Logo -->
+    <div class="flex items-center gap-4">
+      <a href="#" class="flex items-center">
+        <img src="images/image (1).png" alt="Logo Camp'us" class="h-12 w-12 rounded-xl object-cover" />
+        <span class="ml-2 font-extrabold text-lg text-gray-900 hidden sm:inline">Camp'us</span>
+      </a>
+    </div>
+
+    <!-- Desktop links -->
+    <div class="hidden lg:flex lg:items-center lg:gap-8">
+      <a href="#features" class="font-medium text-gray-700 hover:text-indigo-600 transition">Fonctionnalités</a>
+      <a href="#business" class="font-medium text-gray-700 hover:text-indigo-600 transition">Entreprise</a>
+      <a href="#telechargement" class="font-medium text-gray-700 hover:text-indigo-600 transition">Télécharger</a>
+    </div>
+
+    <!-- CTA -->
+    <div class="hidden lg:flex lg:items-center lg:gap-4">
+      <a href="#telechargement" class="px-5 py-2 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg font-semibold shadow hover:shadow-lg transition">
+        Installer l'app
+      </a>
+    </div>
+
+    <!-- Mobile Button -->
+    <button id="mobileToggle" class="lg:hidden p-2 rounded-md hover:bg-gray-100 transition">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="hidden lg:hidden border-t bg-white">
+    <div class="px-4 py-4 space-y-2">
+      <a href="#features" class="block p-3 rounded-md hover:bg-gray-100">Fonctionnalités</a>
+      <a href="#business" class="block p-3 rounded-md hover:bg-gray-100">Entreprise</a>
+      <a href="#telechargement" class="block p-3 rounded-md hover:bg-gray-100">Télécharger</a>
+
+      <a href="#telechargement" class="block p-3 mt-2 text-center bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-md">
+        Installer l'app
+      </a>
+    </div>
+  </div>
+</header>
+
+
+  <!-- HERO -->
+  <section class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 text-center">
+    <div class="max-w-4xl mx-auto">
+      <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">Camp'us — <span class="bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-purple-600">Connecter Étudiants & Entreprises</span></h1>
+      <p class="text-lg sm:text-xl text-gray-600 mb-8">Rencontres sportives, ateliers cuisine, réservations de terrains et offres entreprises — une seule plateforme pour fédérer, monétiser et fidéliser.</p>
+
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="#telechargement" class="inline-flex items-center gap-3 px-6 py-3 rounded-lg bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-semibold shadow hover:shadow-xl transition">Installer l'app</a>
+        <a href="#features" class="inline-flex items-center gap-3 px-6 py-3 rounded-lg border border-gray-200 bg-white font-medium hover:bg-gray-50 transition">Découvrir les fonctionnalités</a>
+      </div>     
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <main class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
+    <section id="features" class="py-16">
+      <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 text-center mb-12">Fonctionnalités principales</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <article class="p-6 bg-white rounded-2xl shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-2">🏃‍♂️ Sport & Réservation</h3>
+          <p class="text-gray-600">Créez des rencontres, réservez des terrains (padel, basket...) et accédez à des tarifs négociés pour les utilisateurs Camp'us.</p>
+        </article>
+
+        <article class="p-6 bg-white rounded-2xl shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-2">🍳 Cuisine & Ateliers</h3>
+          <p class="text-gray-600">Ateliers cuisine, partages de recettes et événements culinaires pour rapprocher les étudiants et les collaborateurs.</p>
+        </article>
+
+        <article class="p-6 bg-white rounded-2xl shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-2">🎓 Entraide & Ressources</h3>
+          <p class="text-gray-600">Aide aux devoirs, échanges de matériel et ressources filtrées selon le statut étudiant ou entreprise.</p>
+        </article>
+        <article class="p-6 bg-white rounded-2xl shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-2">Une version prenium 6,99</h3>
+          <p class="text-gray-600">Acccès a des réduction sur des terrains de sports + escape game ... </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- BUSINESS -->
+    <section id="business" class="py-16">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Camp'us Business — offres & partenariats</h2>
+        <p class="text-gray-600 mb-8">Une version pensée pour les entreprises : team buildings (escape games, ateliers), réservations groupées, accès privilégié aux talents étudiants et gestion des avantages salariés.</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="p-6 bg-gradient-to-br from-indigo-50 to-purple-50 rounded-2xl shadow">
+            <h3 class="font-semibold text-lg mb-2">🎯 Offres team building</h3>
+            <p class="text-gray-600 text-sm">Escape games, ateliers cuisine, et animations négociées pour vos employés.</p>
+          </div>
+
+          <div class="p-6 bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl shadow">
+            <h3 class="font-semibold text-lg mb-2">🎾 Réservation de terrains</h3>
+            <p class="text-gray-600 text-sm">Réservations groupées, tarifs préférentiels et gestion centralisée des créneaux.</p>
+          </div>
+
+          <div class="p-6 bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl shadow">
+            <h3 class="font-semibold text-lg mb-2">🤝 Partenariats & Leads</h3>
+            <p class="text-gray-600 text-sm">Les praticiens s'inscrivent, nous leur envoyons des clients : modèle gagnant-gagnant.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESERVATION EXPLAINER -->
+    <section class="py-12">
+      <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div>
+          <h3 class="text-2xl font-bold mb-3">Comment fonctionnent les réservations ?</h3>
+          <p class="text-gray-600 mb-4">Les utilisateurs réservent un terrain via notre application. Les praticiens et lieux paient pour apparaître et bénéficient d'un flux de clients. Les étudiants profitent de tarifs réduits exclusifs.</p>
+          <ul class="list-disc pl-5 text-gray-600">
+            <li>Tarifs préférentiels négociés</li>
+            <li>Réservation rapide et paiement intégré</li>
+            <li>Programme de fidélité et remises</li>
+          </ul>
+        </div>
+        <div class="bg-white rounded-2xl shadow p-6">
+          <h4 class="font-semibold mb-2">Exemple : Réserver un court de Padel</h4>
+          <p class="text-gray-600 text-sm mb-4">Sélectionnez la ville → choisissez un créneau → bénéficiez de la remise Camp'us.</p>
+          <a href="réservation.html" class="inline-block px-4 py-2 bg-indigo-600 text-white rounded-md">Réserver</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOCIAL PROOF / CTA -->
+    <section class="py-12 text-center">
+      <div class="max-w-3xl mx-auto">
+        <h3 class="text-2xl font-bold mb-3">Ils utilisent Camp'us</h3>
+        <p class="text-gray-600 mb-6">Universités, associations étudiantes et entreprises font confiance à Camp'us pour animer leur communauté.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- DOWNLOAD CTA -->
+  <section id="telechargement" class="bg-gradient-to-b from-white to-indigo-50 py-16">
+    <div class="max-w-4xl mx-auto text-center px-4">
+      <h2 class="text-2xl sm:text-3xl font-bold mb-4">Téléchargez Camp'us</h2>
+      <p class="text-gray-600 mb-6">Disponible sur Android et iOS — rejoignez la communauté.</p>
+      <div class="flex items-center justify-center gap-4">
+        <a href="https://play.google.com/store/apps/developer?id=Apple&hl=fr" class="px-6 py-3 bg-indigo-600 text-white rounded-md">Google Play</a>
+        <a href="https://www.apple.com/fr/app-store/" class="px-6 py-3 bg-purple-600 text-white rounded-md">App Store</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / FOOTER -->
+  <footer id="contact" class="bg-gray-900 text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div>
+        <h4 class="font-bold text-lg">Camp'us</h4>
+        <p class="text-gray-400 text-sm">Contact: hello@campus.example</p>
+      </div>
+      <div>
+        <p class="text-gray-400 text-sm">Fait par Noah Goize</p>
+      </div>
+
+      <div class="text-center md:text-right">
+        <p class="text-gray-400 text-sm">© 2025 Camp'us — Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
